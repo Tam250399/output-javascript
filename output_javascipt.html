@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="code.js"></script>
+
+</head>
+
+<body>
+    <!--hiện thị bằng alert-->
+    <button type="button" onclick="getMessage();">onclick</button>
+    <script>
+        function getMessage() {
+            alert("xin chào")
+        }
+    </script>
+
+    <!-- hiện thị thẻ dùng HTML -->
+
+    <div id="class"></div>
+    <button type="button" onclick="getBrowserInfo();">onclick</button>
+    <script>
+        function getBrowserInfo() {
+            document.getElementById("class").innerHTML = "xin chào"
+        }
+    </script>
+
+    <!--hiện thị bằng document.write() -->
+
+
+    <button type="button" onclick="byExample()">--nhập--</button>
+    <script>
+        function byExample() {
+            document.write('xin chào');
+
+        }
+    </script>
+
+    <!-- hiện thị hàm console.log()-->
+
+    <button type="button" onclick="byConsole()">Bắt đầu </button>
+    <script>
+        function byConsole() {
+            console.log('name');
+        }
+    </script>
+
+</body>
+
+</html>
